@@ -76,12 +76,20 @@ WSGI_APPLICATION = 'GotchaRESTfulAPI.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'ihwisaql',
+    #     'USER': 'ihwisaql',
+    #     'PASSWORD': 'Mv5jkRxyqA5qspN5TGjCJEEMlO_zcAB6',
+    #     'HOST': 'stampy.db.elephantsql.com',
+    #     'PORT': '5432',
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ihwisaql',
-        'USER': 'ihwisaql',
-        'PASSWORD': 'Mv5jkRxyqA5qspN5TGjCJEEMlO_zcAB6',
-        'HOST': 'stampy.db.elephantsql.com',
+        'NAME': 'django_pg',
+        'USER': 'wwalsh',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '5432',
     }
 }

@@ -6,7 +6,6 @@ from .serializers import UserSerializer
 
 class UserList(generics.ListCreateAPIView):
     """ List view for User model - get/post """
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
